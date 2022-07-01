@@ -476,7 +476,8 @@ nav
 .presentation_generale
 {   
     display: flex;
-    justify-content: space-evenly;}
+    justify-content: space-evenly;
+    width: 100%;}
 aside.presentation, aside.ostheopathe,aside.localisation_cabinet
 {
     width: 29%;
@@ -496,10 +497,10 @@ aside.presentation, aside.ostheopathe,aside.localisation_cabinet
         {color: red;}
         .lien__cabinet:hover
         {color: green;}
-.presentation_generale
-{
-    display: flex;
-    width: 100%;}
+aside
+{ transition:  scale(1) 10s ease-in-out; -webkit-transition:  scale(1) 10s ease-in-out; -moz-transition:  scale(1) 10s ease-in-out; -ms-transition:  scale(1) 10s ease-in-out; -o-transition:  scale(1) 10s ease-in-out; }
+aside:hover
+{ transform: translate(5%); -webkit-transform: translate(5%); -moz-transform: translate(5%); -ms-transform: translate(5%); -o-transform: translate(5%); }
 aside.presentation h1
 {
     text-align: center;}
