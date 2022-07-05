@@ -390,7 +390,8 @@ header
 {
   position: sticky;
   top: 0;
-  left: 0;}
+  left: 0;
+}
 
 header
 {
@@ -495,8 +496,38 @@ aside
 { 
   transition: 1.5s ease-out; -webkit-transition: 1.5s ease-out; -moz-transition: 1.5s ease-out; -ms-transition: 1.5s ease-out; -o-transition: 1.5s ease-out; }
 aside:hover
-{ 
-  transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); }
+{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.partner img
+{width: 100%;}
+.partner
+{
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  animation: carousel 5s alternate-reverse ease-in-out infinite;
+  -webkit-animation: carousel 5s alternate-reverse ease-in-out infinite;
+}
+@keyframes carousel{
+  from{
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+}
+to{
+  transform: translateX(500px);
+  -webkit-transform: translateX(500px);
+  -moz-transform: translateX(500px);
+  -ms-transform: translateX(500px);
+  -o-transform: translateX(500px);
+}}
 aside.presentation h1
 {
   text-align: center;}
@@ -583,7 +614,7 @@ li.competence
   width: 100%;
   height: auto;
   padding: 60px 0px;
-  display: flex;
+  
 } 
 /*---------------------responsive tablet---------------------*/
 @media screen and (max-width: 1170px)
@@ -624,6 +655,9 @@ li.competence
   {
     justify-content: space-around;
     flex-direction: column;}
+    .partner
+    {position: relative;
+      }
   .sanitary 
   {
     position: fixed;
@@ -640,7 +674,8 @@ li.competence
   .infos_pratiques h3, .infos_pratiques span
   {
     text-align: center;}
-}
+  }
+ 
 /*-----------------------responsive mobile-------------------------*/
 
 
