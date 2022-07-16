@@ -360,17 +360,18 @@
 body
 {
     width: 100%;
-    max-width: 2000px;
+    
     margin: auto;
     padding: auto;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    font-size: 30px;}
+    font-size: 1.2rem;
+  height: 100vh;}
     
     h1, h2, h3
-    {font-size: 45px;}
+    {font-size: 2rem;}
     h4
-    {font-size: 40px;}
+    {font-size: 2rem;}
 li
 {
     list-style-type: none;
@@ -396,6 +397,7 @@ header
   top: 0;
   left: 0;
   width: 100%;
+  z-index:0;
 }
 
 header .container
@@ -415,7 +417,10 @@ nav.navigation
 .logo 
 {
 	width: 100%;
-	min-width: 151px;}
+	}
+  .logo img
+  {width: 100%;
+  min-height: 280px;}
 
 .contact
 {   display: flex;
@@ -430,26 +435,24 @@ nav
     display: flex;
     text-align: center;
     width: 100%;}
-.competence
-{
-  margin-top: 30px;}
+
 .btn_header
 {
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
-  background-color: rgb(128, 255, 128);
+  background-color: rgba(128, 255, 128, 0.6);
   padding: 25px;
   border-radius: 15px;
-  margin: 10px;
+  
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
   .information_contact .contact_tel
-  {display: flex;}
-
+  {display: flex;
+  justify-content: center;}
 
 
 
@@ -457,7 +460,7 @@ nav
 
 main
 {
-  background-color: rgba(128, 255, 128, 1);
+  background-color: rgba(128, 255, 128, 0.6);
   margin-bottom: 25px;}
 .card_image
 {
@@ -492,6 +495,9 @@ aside.presentation, aside.ostheopathe,aside.localisation_cabinet
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
  }
+ 
+ aside .explication
+ {font-weight: bold;}
     
 .lien__cabinet
 {
@@ -564,22 +570,181 @@ background-color: #f2edea;}
   color: black;
   display: flex;
   justify-content: space-evenly;
-flex-wrap: wrap;}
+  flex-wrap: wrap;
+align-items: center;}
 #localisation
 {
   display: flex;
-justify-content: center;}
+justify-content: center;
+padding: 40px 0;}
 #competences
 {
-  display: flex;
-  flex-direction: column;
+ 
   background-color: #f2edea;
   width: 100%;
-  height: auto;
-  margin-top: 40px;}
-  div.competence_info img
-  {
-max-height: 200px;}
+  height: 150vh;
+  margin-top: 40px;
+margin-left: auto;
+margin-right: auto;}
+.explication{height: 100%;}
+.contact_memoire .btn_header
+{margin: 10px auto;}
+
+
+ /*----------------------part animation #competence---------------------------
+ --------------------------------*/
+ .carousel_photo
+  {overflow: hidden;
+    height: 100%;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .align-image
+  {position:relative;}
+.carousel {
+   
+    height: 100%;
+    margin: 0px auto 0;
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+    height: 100%;
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}  
+.card_competence
+{height: 100%;} 
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 55%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 200px;
+    line-height: 600px;
+    color: #000;
+   
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+    
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f2edea;
+    opacity: 1;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6,
+input#img-7:checked ~ .carousel-dots label#img-dot-7,
+input#img-8:checked ~ .carousel-dots label#img-dot-8, 
+input#img-9:checked ~ .carousel-dots label#img-dot-9,
+input#img-10:checked ~ .carousel-dots label#img-dot10
+
+	{opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+ /*------------------------part infos pratique-------------------------------
+ ----------------------------------------------------*/ 
+ 
+  
 #infos_pratiques{
   background-color: #f2edea;
   display: flex;
@@ -600,6 +765,7 @@ align-items: center;
 	display: flex;
 	justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 .illustration img
 {width: 80%;}
@@ -610,38 +776,29 @@ align-items: center;
 {
   font-weight: bold;
   line-height: 1.5;}
-.contact_info .map
+  .cabinet
+  {font-weight: 900;}
+  .contact_info .map
 {
   margin-bottom: 10px;}
-.competences
-{
-  display: flex;
-  width: 30%;
-  flex-wrap: wrap;}
-.public
-{
-  display: flex;
-  width: 100%;}
-ul.competence__navigation
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;}
+ 
+
 .navigation
 {
   width: 100%;}
-li.competence
-{
-  width: 30%;
-  border-radius: 15px;
-  background-color: #fff;}
+
   .rdv{
     padding: 0;
     margin: 0;
     width: 30%;
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    padding: 25px;
+    background-color: rgba(242, 237, 234, 0.5);
   }
+  .carousel-controls span
+  {background-color: transparent;}
   
   .infos_horaire img{
     width: 50%;
@@ -655,17 +812,33 @@ flex-direction: column;
   height: auto;
   background-color: #fff;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   }
   .information_contact a, .information_contact i{
     display: block;
     width: 50%;
   }
+  /*------------------------------------------slider image competences----------------------------------------------------------
+  -------------------------------------------------------------------------------*/
+  
+  .slider
+  {width: 200px;
+    overflow: hidden;}
+  .slides
+  {width: 100%;
+  display: flex;
+  height:100%;
+position: relative;}
+  
+  
+  
   /*------------------------------------partie information public---------------------------
   ---------------------------------------------------------------------------------*/
   .main_two
   {width: 100%;}
+  /* .align-image
+  {position: relative;} */
   .main-content
   {padding: 3vw 5vw 5vw;}
   .slideshow-container
@@ -761,16 +934,13 @@ background:rgba(0, 0, 0, 0.15);}
     width: 90%;
     flex-direction: column;
     padding: 0px 0px 0px 0px;}
-  
+    .contact_info li
+    {margin-bottom: 20px;}
   .presentation_generale 
   {
    flex-direction: column;}
-  .public 
-  {
-    flex-direction: column;}
-  ul.competence__navigation 
-  {
-    flex-direction: column;}
+  
+ 
   aside.presentation, aside.ostheopathe, aside.localisation_cabinet 
   {
     
@@ -779,13 +949,8 @@ background:rgba(0, 0, 0, 0.15);}
   {padding: 0;}
   aside.presentation h2, aside.ostheopathe h2, aside.localisation_cabinet h2
   {text-align: center;}
-  li.competence 
-  {
-    width: 100%;}
-  ul.competence__navigation
-  {
-    margin: 0;
-    padding: 0;}
+  
+  
   .presentation_generale
   {
       width: 100%;}
@@ -823,6 +988,19 @@ background:rgba(0, 0, 0, 0.15);}
   {text-align: center;}
   .image
   {width: 75%;}
+  .infos_horaire, .rdv
+  {width: 100%;
+  align-items: center;
+  padding: 5% 0;}
+  #infos_pratiques{
+    flex-direction: column;
+  }
+  .illustration {
+    width: 100%;
+    align-items: center;
+}
+.illustration p
+{padding: 5% 5%;}
 }
 
 
