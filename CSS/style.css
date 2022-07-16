@@ -990,6 +990,11 @@ background:rgba(0, 0, 0, 0.15);}
   {text-align: center;}
   .image
   {width: 75%;}
+  section .information {
+    
+    flex-direction: column;
+    align-items: center;
+}
   .infos_horaire, .rdv
   {width: 100%;
   align-items: center;
