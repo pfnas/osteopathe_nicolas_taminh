@@ -974,7 +974,9 @@ background:rgba(0, 0, 0, 0.15);}
   {
     
     width: 100%;}
-  #infos_pratiques h3, #infos_pratiques span
+    aside.presentation p, aside.ostheopathe p, aside.localisation_cabinet p
+    {padding: 15px;}
+    #infos_pratiques h3, #infos_pratiques span
   {
     text-align: center;}
   }
