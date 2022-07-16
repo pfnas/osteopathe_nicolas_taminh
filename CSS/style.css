@@ -963,8 +963,8 @@ background:rgba(0, 0, 0, 0.15);}
       }
   .sanitary 
   {
-    position: fixed;
-    top: 285px;
+    position: absolute;
+    top: 145px;
     left: 40px;
     width: 64px;}
   aside:hover
