@@ -583,7 +583,7 @@ padding: 40px 0;}
  
   background-color: #f2edea;
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   margin-top: 40px;
 margin-left: auto;
 margin-right: auto;}
@@ -941,12 +941,9 @@ background:rgba(0, 0, 0, 0.15);}
     justify-content: center;
   padding: 40px;}
   #competences {
-    background-color: #f2edea;
-    width: 100%;
-    height: 90vh;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    
+    height: 120vh;
+   
   }
   section .information {
     
