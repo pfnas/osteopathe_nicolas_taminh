@@ -361,8 +361,8 @@ body
 {
     width: 100%;
     
-    margin: auto;
-    padding: auto;
+    margin: 0 auto;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     font-size: 1.2rem;
@@ -597,9 +597,7 @@ margin-right: auto;}
  .carousel_photo
   {overflow: hidden;
     height: 100%;
-    margin: 0 auto;
-    width: 90%;
-  }
+}
   .align-image
   {position:relative;}
 .carousel {
@@ -764,7 +762,7 @@ justify-content: center;
 align-items: center;
 }
 .illustration {
-	width: 45%;
+	width: 40%;
 	display: flex;
 	justify-content: center;
   flex-direction: column;
@@ -772,7 +770,7 @@ align-items: center;
   margin-top: 120px;
   background-color: rgba(242, 237, 234, 1);
   border: 2px solid #000;
-  padding: 20px 15px;
+  padding: 20px 0;
 }
 .illustration p
 {padding: 15px;}
@@ -939,7 +937,7 @@ background:rgba(0, 0, 0, 0.15);}
   .btn_header 
   {
     justify-content: center;
-  padding: 40px;}
+    padding: 40px;}
   #competences {
     
     height: 120vh;
@@ -953,7 +951,7 @@ background:rgba(0, 0, 0, 0.15);}
   .contact_info {
     width: 90%;
     
-    padding: 0px 0px 0px 0px;}
+    }
     .contact_info li
     {margin-bottom: 20px;}
   .presentation_generale 
@@ -996,7 +994,8 @@ background:rgba(0, 0, 0, 0.15);}
     
     width: 100%;}
     aside.presentation p, aside.ostheopathe p, aside.localisation_cabinet p
-    {padding: 15px;}
+    {padding:35px 15px;
+    margin: 0;}
     #infos_pratiques h3, #infos_pratiques span
   {
     text-align: center;}
