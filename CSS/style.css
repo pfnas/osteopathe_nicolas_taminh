@@ -582,7 +582,7 @@ padding: 40px 0;}
  
   background-color: #f2edea;
   width: 100%;
-  height: 150vh;
+  height: 130vh;
   margin-top: 40px;
 margin-left: auto;
 margin-right: auto;}
@@ -1015,12 +1015,18 @@ background:rgba(0, 0, 0, 0.15);}
 .illustration p
 {padding: 5% 5%;}
 }
-#competences
+/*----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+@media screen and (max-width: 500px){
+/* #competences
 {
  
   
-  height: 14vh;
+  height: 165vh;
+} */
+
+#competences img
+{width: 90%;
+object-fit: contain;
+margin: 0 auto;}
 }
-
-
-
