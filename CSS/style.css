@@ -356,7 +356,7 @@
          a:hover, button:hover, span:hover
          {background-color: rgb(242, 237, 234);
         transform: scale (1.5)}
-
+*{box-sizing: content-box;}
 body
 {
     width: 100%;
@@ -585,8 +585,10 @@ padding: 40px 0;}
   width: 100%;
   height: 130vh;
   margin-top: 40px;
-margin-left: auto;
-margin-right: auto;}
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;}
 .explication{height: 100%;}
 .contact_memoire .btn_header
 {margin: 10px auto;}
@@ -940,7 +942,7 @@ background:rgba(0, 0, 0, 0.15);}
     padding: 40px;}
   #competences {
     
-    height: 120vh;
+    height: 100vh;
    
   }
   section .information {
@@ -1000,6 +1002,12 @@ background:rgba(0, 0, 0, 0.15);}
   {
     text-align: center;}
   }
+  #competences
+{
+  width: 95%;
+  height: 100vh;
+  padding-left: 25px;
+  padding-right: 25px;}
  
 /*-----------------------responsive mobile-------------------------*/
 @media screen and (max-width: 770px)
@@ -1032,7 +1040,16 @@ background:rgba(0, 0, 0, 0.15);}
 #infos_pratiques{
   background-color: rgba(242, 237, 234, 0.5);}
   
-
+  #competences {
+    width: 95%;
+    height: 100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #infos_pratiques
+  {padding: 0;}
+  .infos_horaire
+  {padding: 0;}
 /*----------------------------------------------------------------------
 ----------------------------------------------------------------------*/
 @media screen and (max-width: 500px){
