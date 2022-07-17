@@ -587,11 +587,16 @@ padding: 40px 0;}
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;}
+}
 .explication{height: 100%;}
 .contact_memoire .btn_header
 {margin: 10px auto;}
+ .explain
+{display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
 
 
  /*----------------------part animation #competence---------------------------
@@ -645,8 +650,7 @@ ul.slides input {
     opacity: 0;
     transition: all .7s ease-in-out;
 }  
-.card_competence
-{height: 100%;} 
+
 
 .slide-image img {
     width: auto;
@@ -673,7 +677,7 @@ ul.slides input {
     opacity: 0;
     transition: opacity .2s;
     cursor: pointer;
-    top: -125px;
+    top: -334px;
 }
 
 .slide-image:hover + .carousel-controls label{
@@ -847,8 +851,7 @@ position: relative;}
   ---------------------------------------------------------------------------------*/
   .main_two
   {width: 100%;}
-  /* .align-image
-  {position: relative;} */
+  
   .main-content
   {padding: 3vw 5vw 5vw;}
   .slideshow-container
@@ -940,11 +943,7 @@ background:rgba(0, 0, 0, 0.15);}
   {
     justify-content: center;
     padding: 40px;}
-  #competences {
-    
-    height: 100vh;
-   
-  }
+ 
   section .information {
     
     flex-direction: column;
@@ -1006,8 +1005,8 @@ background:rgba(0, 0, 0, 0.15);}
 {
   width: 95%;
   height: 100vh;
-  padding-left: 25px;
-  padding-right: 25px;}
+  padding-left: 10px;
+  padding-right: 10px;}
  
 /*-----------------------responsive mobile-------------------------*/
 @media screen and (max-width: 770px)
@@ -1039,17 +1038,20 @@ background:rgba(0, 0, 0, 0.15);}
 }
 #infos_pratiques{
   background-color: rgba(242, 237, 234, 0.5);}
-  
-  #competences {
+  .information_general
+  {margin-top: 50px;}
+  /* #competences {
     width: 95%;
     height: 100vh;
     padding-left: 10px;
     padding-right: 10px;
-  }
+  } */
   #infos_pratiques
   {padding: 0;}
   .infos_horaire
   {padding: 0;}
+  .sanitary
+  {display: none;}
 /*----------------------------------------------------------------------
 ----------------------------------------------------------------------*/
 @media screen and (max-width: 500px){
