@@ -773,7 +773,7 @@ ul.slides input {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: rgba(242, 237, 234, 0.3);
+    background-color: rgba(242, 237, 234, 0.5);
     opacity: .3;
     margin: 10px;
 }
