@@ -875,7 +875,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
   }
-  .information_contact
+  /* .information_contact
   {
   display:flex;
   height: auto;
@@ -884,11 +884,11 @@ align-items: center;
   justify-content: space-evenly;
   align-items: center;
   padding-bottom: 35px;
-  }
-  .information_contact a, .information_contact i{
+  } */
+  /* .information_contact a, .information_contact i{
     display: block;
-    width: 50%;
-  }
+    width: 50%; 
+  }*/
   /*------------------------------------------slider image competences----------------------------------------------------------
   -------------------------------------------------------------------------------*/
   
@@ -1066,6 +1066,8 @@ background:rgba(0, 0, 0, 0.15);}
   height: 100vh;
   padding-left: 10px;
   padding-right: 10px;}
+  .information_contact h4
+  {text-align: center;}
  
 /*-----------------------responsive mobile-------------------------*/
 @media screen and (max-width: 770px)
