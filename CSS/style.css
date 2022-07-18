@@ -420,7 +420,8 @@ nav.navigation
 	}
   .logo img
   {width: 100%;
-  min-height: 280px;}
+  min-height: 280px;
+}
 
 .contact
 {   display: flex;
@@ -443,13 +444,29 @@ nav
   justify-content: space-between;
   white-space: nowrap;
   background-color: rgba(128, 255, 128, 0.6);
+  box-shadow: 2px 5px 6px 4px rgba(119, 251, 149, 0.5);
   padding: 25px;
   border-radius: 15px;
-  
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  transition:transform 1s;
+  -webkit-transition:transform 1s;
+  -moz-transition:transform 1s;
+  -ms-transition:transform 1s;
+  -o-transition:transform 1s;
+}
+
+
+.btn_header:hover 
+{
+  background-color: rgba(128, 255, 128, 0.4);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
   .information_contact .contact_tel
   {display: flex;
@@ -926,6 +943,9 @@ background:rgba(0, 0, 0, 0.15);}
   padding: 60px 0px;
   overflow: hidden;
 } 
+/*-------------------------------------------------------------------------
+-------------------------------Zone de test---------------------------*/
+
 
 
 /*---------------------responsive tablet---------------------*/
@@ -939,11 +959,11 @@ background:rgba(0, 0, 0, 0.15);}
     width: 100%;
     max-height: 250px;
   }
-  .btn_header 
+  /* .btn_header 
   {
     justify-content: center;
     padding: 40px;}
- 
+  */
   section .information {
     
     flex-direction: column;
@@ -1023,13 +1043,15 @@ background:rgba(0, 0, 0, 0.15);}
   .infos_horaire, .rdv
   {width: 100%;
   align-items: center;
-  padding: 5% 0;}
+  padding: 5% 0;
+border: none}
   #infos_pratiques{
     flex-direction: column;
   }
   .illustration {
     width: 100%;
     align-items: center;
+    border: none;
 }
 .illustration p
 {padding: 5% 5%;}
