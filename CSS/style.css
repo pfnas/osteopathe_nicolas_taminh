@@ -1070,6 +1070,10 @@ background:rgba(0, 0, 0, 0.15);}
   padding-right: 10px;}
   .information_contact h4
   {text-align: center;}
+  #competences img
+  { border-radius:0 ; -webkit-border-radius:0 ; -moz-border-radius:0 ; -ms-border-radius:0 ; -o-border-radius:0 ; 
+  object-fit: cover;
+  height: 174px;}
  
 /*-----------------------responsive mobile-------------------------*/
 @media screen and (max-width: 770px)
