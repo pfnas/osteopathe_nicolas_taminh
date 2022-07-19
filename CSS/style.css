@@ -1077,7 +1077,12 @@ background:rgba(0, 0, 0, 0.15);}
   { border-radius:0 ; -webkit-border-radius:0 ; -moz-border-radius:0 ; -ms-border-radius:0 ; -o-border-radius:0 ; 
   object-fit: cover;
   height: 174px;}
-  
+  .explain
+  {display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  }
  
 /*-----------------------responsive mobile-------------------------*/
 @media screen and (max-width: 770px)
