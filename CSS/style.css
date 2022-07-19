@@ -550,7 +550,8 @@ aside.presentation, aside.ostheopathe,aside.localisation_cabinet
     
 .lien__cabinet
 {
-  color: red;}
+  color: red;
+  text-shadow:  5px 5px 2px rgb(0, 0, 0)}
 .lien__cabinet:hover
 {
   color: green;}
@@ -621,6 +622,7 @@ section .information
   justify-content: space-evenly;
   flex-wrap: wrap;
 align-items: center;}
+
 .memoire
 {padding-left: 0px;
 width: 30%;
@@ -902,6 +904,7 @@ align-items: center;
   display: flex;
   height:100%;
 position: relative;}
+
   
   
   
@@ -1074,6 +1077,7 @@ background:rgba(0, 0, 0, 0.15);}
   { border-radius:0 ; -webkit-border-radius:0 ; -moz-border-radius:0 ; -ms-border-radius:0 ; -o-border-radius:0 ; 
   object-fit: cover;
   height: 174px;}
+  
  
 /*-----------------------responsive mobile-------------------------*/
 @media screen and (max-width: 770px)
