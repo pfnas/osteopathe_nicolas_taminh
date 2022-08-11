@@ -551,10 +551,11 @@ aside.presentation, aside.ostheopathe,aside.localisation_cabinet
 .lien__cabinet
 {
   color: red;
-  text-shadow:  5px 5px 2px rgb(0, 0, 0)}
+  }
 .lien__cabinet:hover
 {
-  color: green;}
+  color: green;
+  text-shadow: 2px 5px 6px 4px rgba(119, 251, 149, 0.5);}
 aside
 { 
   transition: 1.5s ease-out; -webkit-transition: 1.5s ease-out; -moz-transition: 1.5s ease-out; -ms-transition: 1.5s ease-out; -o-transition: 1.5s ease-out; }
@@ -634,6 +635,7 @@ margin-bottom: 25px;
 #localisation
 {
   display: flex;
+  flex-direction: column;
 justify-content: center;
 padding: 40px 0;}
 #competences
@@ -669,7 +671,6 @@ align-items: center;
   .align_image
   {position:relative;}
 .carousel {
-   
     height: 100%;
     margin: 0px auto 0;
 }
