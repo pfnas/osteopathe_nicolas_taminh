@@ -555,7 +555,7 @@ aside.presentation, aside.ostheopathe,aside.localisation_cabinet
 .lien__cabinet:hover
 {
   color: green;
-  text-shadow: 2px 5px 6px 4px rgba(119, 251, 149, 0.5);}
+  }
 aside
 { 
   transition: 1.5s ease-out; -webkit-transition: 1.5s ease-out; -moz-transition: 1.5s ease-out; -ms-transition: 1.5s ease-out; -o-transition: 1.5s ease-out; }
