@@ -918,8 +918,8 @@ footer a{
   .contact_info {
     width: 90%;
     }
-    .information.h2{
-      margin-bottom: 25px;
+    .information h2{
+      margin-bottom: 35px;
     }
     .contact_info li
     {margin-bottom: 20px;}
@@ -982,6 +982,9 @@ footer a{
   } */
   .new
   {flex-direction: column;}
+  .cont_btn{
+    justify-content: center;
+  }
  
 /*-----------------------responsive mobile-------------------------*/
 @media screen and (max-width: 770px)
