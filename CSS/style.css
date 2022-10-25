@@ -685,153 +685,61 @@ width: 100%;
 
  /*----------------------part animation #competence---------------------------
  --------------------------------*/
- .carousel_photo
-  {overflow: visible;
-    width: 100%;
-    height: 100%;
+ *, ::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  .align_image
-  {position:relative;
-  height: auto;}
-.carousel {
-    height: 100%;
-    margin: 0px auto 0;
+body{
+  background: #F1F1F1;
 }
-
-ul.slides {
-    display: block;
-    position: relative;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    list-style: none;
+.container_carousel{
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 50px;
+  height: 500px;
+  object-fit: cover;
 }
-.slides * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+.slider .card_competence{
+  max-width: 100%;
+  display: none;
+
 }
-
-ul.slides input {
-    display: none; 
+img{
+  width: 100%;
+  max-height: 500px;
 }
-
-
-.slide-container { 
-    display: block; 
-    height: 100%;
+.card_competence{
+  display: flex;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%
 }
-
-.slide-image {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    opacity: 0;
-    transition: all .7s ease-in-out;
-}  
-
-
-.slide-image img {
-    width: auto;
-    min-width: 100%;
-    height: 100%;
+.card_competence.active{
+  display: block;
+  animation: fade 0.8s;
+  -webkit-animation: fade 0.8s;
 }
+@keyframes fade {from{
 
-.carousel-controls {
-    position: absolute;
-    bottom: 55%;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    font-size: 200px;
-    line-height: 600px;
-    color: #000;
-   
+  opacity:0;
+}to{
+  opacity: 1;
 }
-
-.carousel-controls label {
-    display: none;
-    position: absolute;
-    padding: 0 20px;
-    opacity: 0;
-    transition: opacity .2s;
-    cursor: pointer;
-    top: -334px;
 }
-
-.slide-image:hover + .carousel-controls label{
-    opacity: 0.5;
+.cont_btn{
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 10px rgba( 0, 0,  0, 0.3);
+  border: 1px solid#000;
+  display: flex;
+  justify-content: center;
 }
-
-.carousel-controls label:hover {
-    opacity: 1;
+.btn_nav{
+  font-size: 50px;
+  margin: 0 15px;
+  cursor: pointer;
 }
-
-.carousel-controls .prev-slide {
-    width: 49%;
-    text-align: left;
-    left: 0;
-    
-}
-
-.carousel-controls .next-slide {
-    width: 49%;
-    text-align: right;
-    right: 0;
-}
-
-.carousel-dots {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    z-index: 999;
-    text-align: center;
-}
-
-.carousel-dots .carousel-dot {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(242, 237, 234, 0.5);
-    opacity: .3;
-    margin: 10px;
-}
-
-input:checked + .slide-container .slide-image {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 1s ease-in-out;
-}
-
-input:checked + .slide-container .carousel-controls label {
-     display: block; 
-     background-color: transparent;
-}
-
-input#img-1:checked ~ .carousel-dots label#img-dot-1,
-input#img-2:checked ~ .carousel-dots label#img-dot-2,
-input#img-3:checked ~ .carousel-dots label#img-dot-3,
-input#img-4:checked ~ .carousel-dots label#img-dot-4,
-input#img-5:checked ~ .carousel-dots label#img-dot-5,
-input#img-6:checked ~ .carousel-dots label#img-dot-6,
-input#img-7:checked ~ .carousel-dots label#img-dot-7,
-input#img-8:checked ~ .carousel-dots label#img-dot-8, 
-input#img-9:checked ~ .carousel-dots label#img-dot-9,
-input#img-10:checked ~ .carousel-dots label#img-dot10
-
-	{opacity: 1;
-}
-
-
-input:checked + .slide-container .nav label { display: block; }
 
  /*------------------------part infos pratique-------------------------------
  ----------------------------------------------------*/ 
@@ -921,15 +829,7 @@ align-items: center;
   /*------------------------------------------slider image competences----------------------------------------------------------
   -------------------------------------------------------------------------------*/
   
-  .slider
-  {width: 200px;
-    overflow: hidden;}
-  .slides
-  {width: 100%;
-  display: flex;
-  height:100%;
-position: relative;}
-
+  
   
   
   
@@ -1121,10 +1021,7 @@ footer a{
   { border-radius:0 ; -webkit-border-radius:0 ; -moz-border-radius:0 ; -ms-border-radius:0 ; -o-border-radius:0 ; 
   object-fit: cover;
   width: 100%;}
-  .card_competence
-  {
-    width: 100%;
-    height: auto;}
+ 
   .explain
   {display: flex;
   flex-direction: column;
