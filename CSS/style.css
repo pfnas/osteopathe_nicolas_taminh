@@ -670,17 +670,17 @@ margin-bottom: 25px;
   padding: 40px 0;
   }
 
-.explication{height: 100%;}
+.explication{
+  height: 100%;}
 .contact_memoire .btn_header
 {margin: 10px auto;}
  .explain
-{display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: auto;
-width: 100%;
-padding: 0 10px 15px;
+{
+  margin-bottom: 20px;
+  width: 80%;
+  height: auto;
+  padding: 0 0px 15px 10px;
+  
 
 }
 
@@ -749,7 +749,7 @@ img{
   border-top: 1px solid#000;
   border-bottom: 1px solid#000;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #F1F1F1;
   margin-bottom: 15px;
 }
@@ -917,7 +917,9 @@ footer a{
 }
   .contact_info {
     width: 90%;
-    
+    }
+    .information.h2{
+      margin-bottom: 25px;
     }
     .contact_info li
     {margin-bottom: 20px;}
@@ -972,12 +974,12 @@ footer a{
   {text-align: center;}
   
  
-  .explain
+  /* .explain
   {display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  }
+  } */
   .new
   {flex-direction: column;}
  
