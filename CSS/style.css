@@ -443,6 +443,10 @@ nav.navigation
     justify-content: center;
     width: 100%;
   flex-wrap: wrap;}
+  .contact_tel, i{
+    display: block;
+    background-color: rgba(128, 255, 128, 0.2);
+  }
  .card_logo
 {
    display: flex; 

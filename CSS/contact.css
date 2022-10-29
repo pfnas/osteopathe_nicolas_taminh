@@ -1913,6 +1913,10 @@ align-items: center;
 }
 .new
 {flex-direction: column;}
+form.form_contact{
+  display: flex;
+  flex-direction: column;
+}
 
 /*-----------------------responsive mobile-------------------------*/
 @media screen and (max-width: 770px)
