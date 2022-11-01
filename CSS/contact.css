@@ -1632,7 +1632,7 @@ justify-content: space-between;
 align-items: center;
 }
 .new
-{flex-direction: column;}
+{display: flex;}
 
 /*-----------------------responsive mobile-------------------------*/
 @media screen and (max-width: 770px)
@@ -1770,8 +1770,7 @@ font-weight: 300;
 color: #fff;
 pointer-events: auto;
 }
-.new
-{display:flex ;}
+
 
 /*java script*/
 
@@ -1911,8 +1910,8 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 }
-.new
-{flex-direction: column;}
+/* .new
+{flex-direction: column;} */
 form.form_contact{
   display: flex;
   flex-direction: column;
