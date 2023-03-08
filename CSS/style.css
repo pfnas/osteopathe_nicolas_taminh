@@ -8,394 +8,436 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-  }
-  
-  /* Sections
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
      ========================================================================== */
-  
-  /**
+
+/**
    * Remove the margin in all browsers.
    */
-  
-  body {
-    margin: 0;
-  }
-  
-  /**
+
+body {
+  margin: 0;
+}
+
+/**
    * Render the `main` element consistently in IE.
    */
-  
-  main {
-    display: block;
-  }
-  
-  /**
+
+main {
+  display: block;
+}
+
+/**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
-  
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
-  
-  /* Grouping content
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
      ========================================================================== */
-  
-  /**
+
+/**
    * 1. Add the correct box sizing in Firefox.
    * 2. Show the overflow in Edge and IE.
    */
-  
-  hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
-  }
-  
-  /**
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
    */
-  
-  pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
-  }
-  
-  /* Text-level semantics
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
      ========================================================================== */
-  
-  /**
+
+/**
    * Remove the gray background on active links in IE 10.
    */
-  
-  a {
-    background-color: transparent;
-  }
-  
-  /**
+
+a {
+  background-color: transparent;
+}
+
+/**
    * 1. Remove the bottom border in Chrome 57-
    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
    */
-  
-  abbr[title] {
-    border-bottom: none; /* 1 */
-    text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
-  }
-  
-  /**
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
    * Add the correct font weight in Chrome, Edge, and Safari.
    */
-  
-  b,
-  strong {
-    font-weight: bolder;
-  }
-  
-  /**
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
    */
-  
-  code,
-  kbd,
-  samp {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
-  }
-  
-  /**
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
    * Add the correct font size in all browsers.
    */
-  
-  small {
-    font-size: 80%;
-  }
-  
-  /**
+
+small {
+  font-size: 80%;
+}
+
+/**
    * Prevent `sub` and `sup` elements from affecting the line height in
    * all browsers.
    */
-  
-  sub,
-  sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
-  
-  sub {
-    bottom: -0.25em;
-  }
-  
-  sup {
-    top: -0.5em;
-  }
-  
-  /* Embedded content
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
      ========================================================================== */
-  
-  /**
+
+/**
    * Remove the border on images inside links in IE 10.
    */
-  
-  img {
-    border-style: none;
-  }
-  
-  /* Forms
+
+img {
+  border-style: none;
+}
+
+/* Forms
      ========================================================================== */
-  
-  /**
+
+/**
    * 1. Change the font styles in all browsers.
    * 2. Remove the margin in Firefox and Safari.
    */
-  
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
-  }
-  
-  /**
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
    * Show the overflow in IE.
    * 1. Show the overflow in Edge.
    */
-  
-  button,
-  input { /* 1 */
-    overflow: visible;
-  }
-  
-  /**
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
    * Remove the inheritance of text transform in Edge, Firefox, and IE.
    * 1. Remove the inheritance of text transform in Firefox.
    */
-  
-  button,
-  select { /* 1 */
-    text-transform: none;
-  }
-  
-  /**
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
    * Correct the inability to style clickable types in iOS and Safari.
    */
-  
-  button,
+
+/* button,
   [type="button"],
   [type="reset"],
   [type="submit"] {
     -webkit-appearance: button;
   }
-  
-  /**
+   */
+/**
    * Remove the inner border and padding in Firefox.
    */
-  
-  button::-moz-focus-inner,
-  [type="button"]::-moz-focus-inner,
-  [type="reset"]::-moz-focus-inner,
-  [type="submit"]::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
-  }
-  
-  /**
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
    * Restore the focus styles unset by the previous rule.
    */
-  
-  button:-moz-focusring,
-  [type="button"]:-moz-focusring,
-  [type="reset"]:-moz-focusring,
-  [type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText;
-  }
-  
-  /**
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
    * Correct the padding in Firefox.
    */
-  
-  fieldset {
-    padding: 0.35em 0.75em 0.625em;
-  }
-  
-  /**
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
    * 1. Correct the text wrapping in Edge and IE.
    * 2. Correct the color inheritance from `fieldset` elements in IE.
    * 3. Remove the padding so developers are not caught out when they zero out
    *    `fieldset` elements in all browsers.
    */
-  
-  legend {
-    box-sizing: border-box; /* 1 */
-    color: inherit; /* 2 */
-    display: table; /* 1 */
-    max-width: 100%; /* 1 */
-    padding: 0; /* 3 */
-    white-space: normal; /* 1 */
-  }
-  
-  /**
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
    * Add the correct vertical alignment in Chrome, Firefox, and Opera.
    */
-  
-  progress {
-    vertical-align: baseline;
-  }
-  
-  /**
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
    * Remove the default vertical scrollbar in IE 10+.
    */
-  
-  textarea {
-    overflow: auto;
-  }
-  
-  /**
+
+textarea {
+  overflow: auto;
+}
+
+/**
    * 1. Add the correct box sizing in IE 10.
    * 2. Remove the padding in IE 10.
    */
-  
-  [type="checkbox"],
-  [type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
-  }
-  
-  /**
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
-  
-  [type="number"]::-webkit-inner-spin-button,
-  [type="number"]::-webkit-outer-spin-button {
-    height: auto;
-  }
-  
-  /**
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
    * 1. Correct the odd appearance in Chrome and Safari.
    * 2. Correct the outline style in Safari.
    */
-  
-  [type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    outline-offset: -2px; /* 2 */
-  }
-  
-  /**
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
    * Remove the inner padding in Chrome and Safari on macOS.
    */
-  
-  /* [type="search"]::-webkit-search-decoration {
+
+/* [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
   } */
-  
-  /**
+
+/**
    * 1. Correct the inability to style clickable types in iOS and Safari.
    * 2. Change font properties to `inherit` in Safari.
    */
-  
-  ::-webkit-file-upload-button {
-    -webkit-appearance: button; /* 1 */
-    font: inherit; /* 2 */
-  }
-  
-  /* Interactive
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
      ========================================================================== */
-  
-  /*
+
+/*
    * Add the correct display in Edge, IE 10+, and Firefox.
    */
-  
-  details {
-    display: block;
-  }
-  
-  /*
+
+details {
+  display: block;
+}
+
+/*
    * Add the correct display in all browsers.
    */
-  
-  summary {
-    display: list-item;
-  }
-  
-  /* Misc
+
+summary {
+  display: list-item;
+}
+
+/* Misc
      ========================================================================== */
-  
-  /**
+
+/**
    * Add the correct display in IE 10+.
    */
-  
-  template {
-    display: none;
-  }
-  
-  /**
+
+template {
+  display: none;
+}
+
+/**
    * Add the correct display in IE 10.
    */
-  
-  [hidden] {
-    display: none;
-  }
-  /*-------------------------Projet Nico-----------------------*/
-  
-  
+
+[hidden] {
+  display: none;
+}
+
+/*-------------------------Projet Nico-----------------------*/
+
+
 /*color: rgb(128, 255, 128); color vert pastel
          rgb(242, 237, 234); color gray
          rgb(174, 155, 179); color purple*/
-         a:hover, button:hover, span:hover
-         {
-          background-color: rgb(242, 237, 234);
-          transform: scale(1.5);
-          -webkit-transform: scale(1.5);
-          -moz-transform: scale(1.5);
-          -ms-transform: scale(1.5);
-          -o-transform: scale(1.5);
+a:hover,
+button:hover,
+span:hover {
+  background-color: rgba(128, 255, 128, 0.1);
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
-*{box-sizing: content-box;}
-body
-{
-    width: 100%;
-    
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    font-size: 1.2rem;
-  height: 100vh;}
-    
-    h1
-    {font-size: 2.5rem;}
-    h2{
-      font-size:2rem;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      text-align: center;
-    }
-    h4, h3
-    {font-size: 1.6rem;
-    text-align: center;
-  padding: 20px;}
-li
-{
-    list-style-type: none;
+
+* {
+  box-sizing: content-box;
 }
-a
-{
-    color: black;
-    text-decoration: none;}
-img
-{
+
+body {
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+h4,
+h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
   object-fit: contain;
   border-radius: 0px 0px 0px 0px;
   -webkit-border-radius: 0px 0px 0px 0px;
@@ -404,85 +446,94 @@ img
   -o-border-radius: 0px 0px 0px 0px;
   width: 100%;
 }
+
 /*----------------header------------------*/
 
-header
-{
+header {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  z-index:0;
+  z-index: 0;
 }
 
-header .container
-{
-    background-color: rgb(255, 255, 255);
-    display:flex;
-    justify-content: space-between;
-    width: 100%;}
-header a
-{
-  padding-left: 10px;}
-nav.navigation
-{   
-    display:flex;
-    flex-direction: column;}
+header .container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
-.logo 
-{
-	width: 100%;
-	}
-  .logo img
-  {width: 100%;
+header a {
+  padding-left: 10px;
+}
+
+nav.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 100%;
+}
+
+.logo img {
+  width: 100%;
   max-height: 250px;
 }
 
-.contact
-{   display: flex;
-    justify-content: center;
-    width: 100%;
-  flex-wrap: wrap;}
-  .contact_tel, i{
-    display: block;
-    background-color: rgba(128, 255, 128, 0.2);
-  }
- .card_logo
-{
-   display: flex; 
-   justify-content: center;
-  padding-bottom: 40px;}
-nav
-{
-    display: flex;
-    text-align: center;
-    width: 100%;}
+.contact {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
 
-.btn_header
-{
+.contact_tel,
+i {
+  display: block;
+  background-color: rgba(128, 255, 128, 0.2);
+}
+
+.card_logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+nav {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.btn_header {
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
   background-color: rgba(128, 255, 128, 0.6);
   box-shadow: 2px 5px 6px 4px rgba(119, 251, 149, 0.5);
+  border: 2px solid rgba(128, 255, 128, 0.6);
   padding: 25px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  transition:transform 1s;
-  -webkit-transition:transform 1s;
-  -moz-transition:transform 1s;
-  -ms-transition:transform 1s;
-  -o-transition:transform 1s;
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
 }
-.contact_memoire{display:flex;
-justify-content: center;}
+
+.contact_memoire {
+  display: flex;
+  justify-content: center;
+}
 
 
-.btn_header:hover 
-{
+.btn_header:hover {
   background-color: rgba(128, 255, 128, 0.4);
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -490,77 +541,83 @@ justify-content: center;}
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-  .information_contact .contact_tel
-  {display: flex;
-  justify-content: center;}
+
+.information_contact .contact_tel {
+  display: flex;
+  justify-content: center;
+}
 
 
 
 /* ----------------MAIN------------------- */
 
-main
-{
+main {
   background-color: rgba(128, 255, 128, 0.6);
-  margin-bottom: 25px;}
-  .information h2
-  {
+  margin-bottom: 25px;
+}
+
+.information h2 {
   padding: 25px;
   background-color: rgb(242, 237, 234);
   border: 2px solid #000;
   border-radius: 10px;
   box-shadow: 2px 5px 5px 2px rgb(0, 0, 0);
-  transition:transform 1s ease-in-out;
-  -webkit-transition:transform 1s ease-in-out;
-  -moz-transition:transform 1s ease-in-out;
-  -ms-transition:transform 1s ease-in-out;
-  -o-transition:transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  -webkit-transition: transform 1s ease-in-out;
+  -moz-transition: transform 1s ease-in-out;
+  -ms-transition: transform 1s ease-in-out;
+  -o-transition: transform 1s ease-in-out;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.information h2:hover
-{
+
+.information h2:hover {
   background-color: rgba(242, 237, 234, 0.5);
   box-shadow: 2px 5px 29px 4px rgba(0, 0, 0, 0.5);
-  transform:scale(1.1);
-  -webkit-transform:scale(1.1);
-  -moz-transform:scale(1.1);
-  -ms-transform:scale(1.1);
-  -o-transform:scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
-.card_image
-{
+.card_image {
   height: auto;
   padding: 10px 0;
-  
+
 }
-img.presentation{
+
+img.presentation {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  margin-right : auto;
-  margin-left : auto;
-  
+  margin-right: auto;
+  margin-left: auto;
+
 }
-.sanitary 
-{
+
+.sanitary {
   position: fixed;
   top: 45px;
   right: 130px;
-  width: auto;}
-.presentation_generale
-{   
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+  width: auto;
+}
+
+.presentation_generale {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
   padding-bottom: 70px;
-  flex-wrap: wrap;}
-aside.presentation, aside.ostheopathe,aside.localisation_cabinet
-{
+  flex-wrap: wrap;
+}
+
+aside.presentation,
+aside.ostheopathe,
+aside.localisation_cabinet {
   width: 43%;
   background-color: rgb(242, 237, 234);
   padding: 0 15px;
@@ -573,183 +630,216 @@ aside.presentation, aside.ostheopathe,aside.localisation_cabinet
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
- }
- .presentation_explain{
-  
+}
+
+.presentation_explain {
+
   padding: 20px 10%;
- }
- 
- aside .explication
- {font-weight: bold;}
-    
-.lien__cabinet
-{
+}
+
+aside .explication {
+  font-weight: bold;
+}
+
+.lien__cabinet {
   color: red;
-  }
-.lien__cabinet:hover
-{
+}
+
+.lien__cabinet:hover {
   color: green;
-  }
-aside
-{ 
-  transition: 1.5s ease-out; -webkit-transition: 1.5s ease-out; -moz-transition: 1.5s ease-out; -ms-transition: 1.5s ease-out; -o-transition: 1.5s ease-out; }
-aside:hover
-{
+}
+
+aside {
+  transition: 1.5s ease-out;
+  -webkit-transition: 1.5s ease-out;
+  -moz-transition: 1.5s ease-out;
+  -ms-transition: 1.5s ease-out;
+  -o-transition: 1.5s ease-out;
+}
+
+aside:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-.partner img
-{width: 100%;}
-.partner
-{
+
+.partner img {
+  width: 100%;
+}
+
+.partner {
   display: flex;
-  
+
   justify-content: space-around;
   animation: carousel 5s alternate-reverse ease-in-out infinite;
   -webkit-animation: carousel 5s alternate-reverse ease-in-out infinite;
 }
-@keyframes carousel{
-  from{
+
+@keyframes carousel {
+  from {
     transform: translateX(-500px);
     -webkit-transform: translateX(-500px);
     -moz-transform: translateX(-500px);
     -ms-transform: translateX(-500px);
     -o-transform: translateX(-500px);
+  }
+
+  to {
+    transform: translateX(500px);
+    -webkit-transform: translateX(500px);
+    -moz-transform: translateX(500px);
+    -ms-transform: translateX(500px);
+    -o-transform: translateX(500px);
+  }
 }
-to{
-  transform: translateX(500px);
-  -webkit-transform: translateX(500px);
-  -moz-transform: translateX(500px);
-  -ms-transform: translateX(500px);
-  -o-transform: translateX(500px);
-}}
-aside.presentation h1
-{
-  text-align: center;}
-  .pictures
-{
-  display:flex;
+
+aside.presentation h1 {
+  text-align: center;
+}
+
+.pictures {
+  display: flex;
   width: 100%;
   object-fit: contain;
   padding-top: 60px;
-  border-bottom: 40px;}
-   .pictures img
-{
+  border-bottom: 40px;
+}
+
+.pictures img {
   margin: 15px;
   border-radius: 25px;
   border: 4px solid #fff;
-  box-shadow: 2px 5px 29px 4px #000;} 
-section .information
-{
+  box-shadow: 2px 5px 29px 4px #000;
+}
+
+section .information {
   display: flex;
   justify-content: space-evenly;
   padding: 40px 0 45px 0;
-  background-color: rgba(242, 237, 234, 1);}
-.contact_info
-{
+  background-color: rgba(242, 237, 234, 1);
+}
+
+.contact_info {
   padding: 0px;
   width: 100%;
   color: black;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-align-items: center;}
-
-.memoire
-{padding-left: 0px;
-width: 30%;
-align-items: center;
-margin: auto;
-display: flex;
-margin-bottom: 25px;
+  align-items: center;
 }
-#localisation
-{
+
+.memoire {
+  padding-left: 0px;
+  width: 30%;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+#localisation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 40px 0;
-  }
+}
 
-.explication{
-  height: 100%;}
-.contact_memoire .btn_header
-{margin: 10px auto;}
- .explain
-{
+.explication {
+  height: 100%;
+}
+
+.contact_memoire .btn_header {
+  margin: 10px auto;
+}
+
+.explain {
   margin-bottom: 20px;
   width: 80%;
   height: auto;
   padding: 0 0px 15px 10px;
-  
+
 
 }
 
 
 
- /*----------------------part animation #competence---------------------------
+/*----------------------part animation #competence---------------------------
  --------------------------------*/
- *, ::before, ::after{
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background: #F1F1F1;
 }
-#competence{
+
+#competence {
   background-color: rgba(119, 251, 149, 0.5);
-  
+
 }
-.container_carousel{
- max-width: 800px;
- margin: 0 auto;
- padding: 50px;
+
+.container_carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
   height: 500px;
   object-fit: cover;
-  
+
 }
-.slider .card_competence{
+
+.slider .card_competence {
   max-width: 100%;
   display: none;
   border: 2px solid #000;
   background-color: #F1F1F1;
 
 }
-img{
+
+img {
   width: 100%;
   max-height: 500px;
-  
+
 }
-.card_competence{
+
+.card_competence {
   display: flex;
   justify-content: center;
   padding-left: 5%;
   padding-right: 5%;
-  
+
   padding-top: 5%;
   width: 80%;
   margin: 10px auto
 }
-.card_competence.active{
+
+.card_competence.active {
   display: block;
   animation: fade 0.8s;
   -webkit-animation: fade 0.8s;
 }
-@keyframes fade {from{
 
-  opacity:0;
-}to{
-  opacity: 1;
+@keyframes fade {
+  from {
+
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
-}
-.cont_btn{
+
+.cont_btn {
   width: 100%;
   height: auto;
-  box-shadow: 0 10px 10px rgba( 0, 0,  0, 0.3);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   border-top: 1px solid#000;
   border-bottom: 1px solid#000;
   display: flex;
@@ -757,35 +847,36 @@ img{
   background-color: #F1F1F1;
   margin-bottom: 15px;
 }
-.btn_nav{
+
+.btn_nav {
   font-size: 50px;
   margin: 0 15px;
   cursor: pointer;
 }
 
- /*------------------------part infos pratique-------------------------------
- ----------------------------------------------------*/ 
- 
-  
-#infos_pratiques{
+/*------------------------part infos pratique-------------------------------
+ ----------------------------------------------------*/
+
+
+#infos_pratiques {
   background-color: rgba(128, 255, 128, 0.6);
   display: flex;
   padding: 50px 0;
-  
+
 }
 
-.infos_horaire
-{
-  display:flex;
+.infos_horaire {
+  display: flex;
   flex-direction: column;
-width: 50%;
-justify-content: center;
-align-items: center;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
+
 .illustration {
-	width: 40%;
-	display: flex;
-	justify-content: center;
+  width: 40%;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-top: 120px;
@@ -793,69 +884,82 @@ align-items: center;
   border: 2px solid #000;
   padding: 20px 0;
 }
-.illustration p
-{padding: 15px;}
-.illustration img
-{width: 80%;}
-.illustration p{
+
+.illustration p {
+  padding: 15px;
+}
+
+.illustration img {
+  width: 80%;
+}
+
+.illustration p {
   margin-top: 125px;
 }
-.day
-{
+
+.day {
   font-weight: bold;
-  line-height: 1.5;}
-  .cabinet
-  {font-weight: 900;}
-  .contact_info .map
-{
-  margin-bottom: 10px;}
- 
+  line-height: 1.5;
+}
 
-.navigation
-{
-  width: 100%;}
+.cabinet {
+  font-weight: 900;
+}
 
-  .rdv{
-    padding: 0;
-    margin: 0;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #000;
-    padding: 25px;
-    background-color: rgba(242, 237, 234, 1);
-  }
-  .carousel-controls span
-  {background-color: transparent;}
-  
-  .infos_horaire img{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /*------------------------------------------slider image competences----------------------------------------------------------
+.contact_info .map {
+  margin-bottom: 10px;
+}
+
+
+.navigation {
+  width: 100%;
+}
+
+.rdv {
+  padding: 0;
+  margin: 0;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000;
+  padding: 25px;
+  background-color: rgba(242, 237, 234, 1);
+}
+
+.carousel-controls span {
+  background-color: transparent;
+}
+
+.infos_horaire img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------------------------slider image competences----------------------------------------------------------
   -------------------------------------------------------------------------------*/
-  
-  
-  
-  
-  
-  /*------------------------------------partie information public---------------------------
-  ---------------------------------------------------------------------------------*/
-  */
-.new
-{display:flex ;}
 
-#localisation{
+
+
+
+
+/*------------------------------------partie information public---------------------------
+  ---------------------------------------------------------------------------------*/
+*/ .new {
+  display: flex;
+}
+
+#localisation {
   width: 50%;
   margin: auto;
   border: 2px solid rgb(216, 216, 216);
   margin: 20px auto;
 }
-#localisation.h2{
-  padding-top: 20px;}
+
+#localisation.h2 {
+  padding-top: 20px;
+}
 
 
 
@@ -863,181 +967,251 @@ align-items: center;
 
 
 /*------------------footer---------------------*/
- footer
-{
+footer {
   background-color: rgb(242, 237, 234);
   width: 100%;
   height: auto;
   padding: 60px 0px;
   overflow: hidden;
-} 
-.information_author{
+}
+
+.information_author {
   display: flex;
   justify-content: center;
 }
-.social_network{
+
+.social_network {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 50px;
-  font-size: 3.2rem;  
+  font-size: 3.2rem;
 }
-footer a{
+
+footer a {
   color: #0000ff;
- 
+
 }
-.information_author{
+
+.information_author {
   display: flex;
   flex-direction: column;
-  
+
   align-items: center;
 }
+
 /*-------------------------------------------------------------------------
 -------------------------------Zone de test---------------------------*/
 
 
 
 /*---------------------responsive tablet---------------------*/
-@media screen and (max-width: 992px)
- {
+@media screen and (max-width: 992px) {
   header .container {
-    
+
     flex-direction: column;
   }
-  .logo img{
+
+  .logo img {
     width: 100%;
     max-height: 250px;
   }
-  
+
   /* .btn_header 
   {
     justify-content: center;
     padding: 40px;}
   */
   section .information {
-    
+
     flex-direction: column;
     align-items: center;
-}
+  }
+
   .contact_info {
     width: 90%;
-    }
-    .information h2{
-      margin-bottom: 35px;
-    }
-    .contact_info li
-    {margin-bottom: 20px;}
-  .presentation_generale 
-  {
-   flex-direction: column;}
-  
- 
-  aside.presentation, aside.ostheopathe, aside.localisation_cabinet 
-  {
-    
-    margin-top: 20px;}
-    aside.presentation, aside.ostheopathe, aside.localisation_cabinet
-  {padding: 0;}
-  aside.presentation h2, aside.ostheopathe h2, aside.localisation_cabinet h2
-  {text-align: center;}
-  
-  
-  .presentation_generale
-  {
-      width: 94%;
-    margin:auto}
-  footer img
-  {width: 90%;
-  
+  }
+
+  .information h2 {
+    margin-bottom: 35px;
+  }
+
+  .contact_info li {
+    margin-bottom: 20px;
+  }
+
+  .presentation_generale {
+    flex-direction: column;
+  }
+
+
+  aside.presentation,
+  aside.ostheopathe,
+  aside.localisation_cabinet {
+
+    margin-top: 20px;
+  }
+
+  aside.presentation,
+  aside.ostheopathe,
+  aside.localisation_cabinet {
+    padding: 0;
+  }
+
+  aside.presentation h2,
+  aside.ostheopathe h2,
+  aside.localisation_cabinet h2 {
+    text-align: center;
+  }
+
+
+  .presentation_generale {
+    width: 94%;
+    margin: auto
+  }
+
+  footer img {
+    width: 90%;
+
     justify-content: space-around;
-    }
-    .partner
-    {position: relative;
-      }
-  .sanitary 
-  {
+  }
+
+  .partner {
+    position: relative;
+  }
+
+  .sanitary {
     position: absolute;
     top: 145px;
     left: 40px;
-    width: 64px;}
-  aside:hover
-  {
-     transform: scale(0.95); -webkit-transform: scale(0.95); -moz-transform: scale(0.95); -ms-transform: scale(0.95); -o-transform: scale(0.95); }
-  aside.presentation, aside.ostheopathe, aside.localisation_cabinet 
-  {
-    
-    width: 100%;}
-    aside.presentation p, aside.ostheopathe p, aside.localisation_cabinet p
-    {padding:35px 15px;
-    margin: 0;}
-    #infos_pratiques h3, #infos_pratiques span
-  {
-    text-align: center;}
+    width: 64px;
   }
- 
-  .information_contact h4
-  {text-align: center;}
-  
- 
-  /* .explain
+
+  aside:hover {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+  }
+
+  aside.presentation,
+  aside.ostheopathe,
+  aside.localisation_cabinet {
+
+    width: 100%;
+  }
+
+  aside.presentation p,
+  aside.ostheopathe p,
+  aside.localisation_cabinet p {
+    padding: 35px 15px;
+    margin: 0;
+  }
+
+  #infos_pratiques h3,
+  #infos_pratiques span {
+    text-align: center;
+  }
+}
+
+.information_contact h4 {
+  text-align: center;
+}
+
+
+/* .explain
   {display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   } */
-  .new
-  {flex-direction: column;}
-  .cont_btn{
-    justify-content: center;
-  }
- 
+.new {
+  flex-direction: column;
+}
+
+.cont_btn {
+  justify-content: center;
+}
+
 /*-----------------------responsive mobile-------------------------*/
-@media screen and (max-width: 770px)
-{
-  aside.presentation, aside.ostheopathe, aside.localisation_cabinet
-  {padding: 0;}
-  aside.presentation h2, aside.ostheopathe h2, aside.localisation_cabinet h2
-  {text-align: center;}
-  .image
-  {width: 75%;}
-  .contact_info
-  {flex-direction: column;}
-  h4
-  {text-align: center;}
-  .infos_horaire, .rdv
-  {width: 100%;
-  align-items: center;
-  padding: 5% 0;
-border: none}
-  #infos_pratiques{
+@media screen and (max-width: 770px) {
+
+  aside.presentation,
+  aside.ostheopathe,
+  aside.localisation_cabinet {
+    padding: 0;
+  }
+
+  aside.presentation h2,
+  aside.ostheopathe h2,
+  aside.localisation_cabinet h2 {
+    text-align: center;
+  }
+
+  .image {
+    width: 75%;
+  }
+
+  .contact_info {
     flex-direction: column;
   }
+
+  h4 {
+    text-align: center;
+  }
+
+  .infos_horaire,
+  .rdv {
+    width: 100%;
+    align-items: center;
+    padding: 5% 0;
+    border: none
+  }
+
+  #infos_pratiques {
+    flex-direction: column;
+  }
+
   .illustration {
     width: 100%;
     align-items: center;
     border: none;
-}
-.illustration p
-{padding: 5% 5%;}
-.partner img
-{width: 80%;}
-}
-#infos_pratiques{
-  background-color: rgba(242, 237, 234, 0.5);}
-  .information_general
-  {margin-top: 90px;}
-  
-  #infos_pratiques
-  {padding: 0;}
-  .infos_horaire
-  {padding: 0;}
-  .sanitary
-  {display: none;}
-  #localisation{
-    width: 100%;
   }
 
-  
+  .illustration p {
+    padding: 5% 5%;
+  }
+
+  .partner img {
+    width: 80%;
+  }
+}
+
+#infos_pratiques {
+  background-color: rgba(242, 237, 234, 0.5);
+}
+
+.information_general {
+  margin-top: 90px;
+}
+
+#infos_pratiques {
+  padding: 0;
+}
+
+.infos_horaire {
+  padding: 0;
+}
+
+.sanitary {
+  display: none;
+}
+
+#localisation {
+  width: 100%;
+}
+
+
 /*----------------------------------------------------------------------
 ----------------------------------------------------------------------*/
-

@@ -25,3 +25,5 @@ function slideprecedente() {
   console.log(count);
 }
 precedent.addEventListener("click", slideprecedente);
+
+
