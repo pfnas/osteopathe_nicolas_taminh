@@ -1335,10 +1335,6 @@ footer a {
     max-height: 250px;
   }
 
-  form.form_contact {
-    flex-direction: column;
-
-  }
 
   section .information {
 
@@ -1466,6 +1462,11 @@ footer a {
   aside.ostheopathe,
   aside.localisation_cabinet {
     padding: 0;
+  }
+
+  form.form_contact {
+    flex-direction: column;
+
   }
 
   aside.presentation h2,
