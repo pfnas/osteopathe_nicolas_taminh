@@ -384,6 +384,18 @@ template {
 /*color: rgb(128, 255, 128); color vert pastel
          rgb(242, 237, 234); color gray
          rgb(174, 155, 179); color purple*/
+@font-face {
+  font-family: Bodoni;
+  src: url(../font/BodoniFLF-BoldItalic.ttf);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Bodoni;
+}
+
 a:hover,
 button:hover,
 span:hover {
@@ -411,7 +423,7 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -471,6 +483,7 @@ header a {
 nav.navigation {
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .logo {
