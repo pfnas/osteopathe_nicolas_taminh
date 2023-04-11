@@ -926,6 +926,15 @@ img {
   background-color: rgba(242, 237, 234, 1);
 }
 
+.rdv #tel {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  line-height: 2rem;
+  font-weight: 900;
+  background: #b1afaf;
+}
+
 .carousel-controls span {
   background-color: transparent;
 }
