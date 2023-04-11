@@ -378,7 +378,8 @@ template {
   display: none;
 }
 
-/*-------------------------Projet Nico-----------------------*/
+/*-------------------------Projet Nico-----------------------
+-------------------------------------------------------------*/
 
 
 /*color: rgb(128, 255, 128); color vert pastel
@@ -407,13 +408,12 @@ span:hover {
   -o-transform: scale(1.5);
 }
 
-* {
+/* * {
   box-sizing: content-box;
-}
+} */
 
 body {
   width: 100%;
-
   margin: 0 auto;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -545,7 +545,6 @@ nav {
   justify-content: center;
 }
 
-
 .btn_header:hover {
   background-color: rgba(128, 255, 128, 0.4);
   transform: scale(1.1);
@@ -559,8 +558,6 @@ nav {
   display: flex;
   justify-content: center;
 }
-
-
 
 /* ----------------MAIN------------------- */
 
@@ -602,7 +599,7 @@ main {
 
 }
 
-img.presentation {
+/* img.presentation {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -610,8 +607,7 @@ img.presentation {
   -o-border-radius: 0;
   margin-right: auto;
   margin-left: auto;
-
-}
+} */
 
 .sanitary {
   position: fixed;
@@ -684,7 +680,6 @@ aside:hover {
 
 .partner {
   display: flex;
-
   justify-content: space-around;
   animation: carousel 5s alternate-reverse ease-in-out infinite;
   -webkit-animation: carousel 5s alternate-reverse ease-in-out infinite;
@@ -773,11 +768,7 @@ section .information {
   width: 80%;
   height: auto;
   padding: 0 0px 15px 10px;
-
-
 }
-
-
 
 /*----------------------part animation #competence---------------------------
  --------------------------------*/
@@ -840,7 +831,6 @@ img {
 
 @keyframes fade {
   from {
-
     opacity: 0;
   }
 
@@ -923,7 +913,6 @@ img {
   margin-bottom: 10px;
 }
 
-
 .navigation {
   width: 100%;
 }
@@ -963,9 +952,6 @@ img {
   -------------------------------------------------------------------------------*/
 
 
-
-
-
 /*------------------------------------partie information public---------------------------
   ---------------------------------------------------------------------------------*/
 */ .new {
@@ -982,11 +968,6 @@ img {
 #localisation.h2 {
   padding-top: 20px;
 }
-
-
-
-
-
 
 /*------------------footer---------------------*/
 footer {
@@ -1026,11 +1007,9 @@ footer a {
 -------------------------------Zone de test---------------------------*/
 
 
-
 /*---------------------responsive tablet---------------------*/
 @media screen and (max-width: 992px) {
   header .container {
-
     flex-direction: column;
   }
 
@@ -1039,11 +1018,6 @@ footer a {
     max-height: 250px;
   }
 
-  /* .btn_header 
-  {
-    justify-content: center;
-    padding: 40px;}
-  */
   section .information {
 
     flex-direction: column;
@@ -1085,7 +1059,6 @@ footer a {
   aside.localisation_cabinet h2 {
     text-align: center;
   }
-
 
   .presentation_generale {
     width: 94%;
@@ -1141,13 +1114,6 @@ footer a {
   text-align: center;
 }
 
-
-/* .explain
-  {display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  } */
 .new {
   flex-direction: column;
 }
