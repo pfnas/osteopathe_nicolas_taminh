@@ -786,9 +786,6 @@ form.form_contact {
 /*-------------------------Projet Nico-----------------------*/
 
 
-/*color: rgb(128, 255, 128); color vert pastel
-       rgb(242, 237, 234); color gray
-       rgb(174, 155, 179); color purple*/
 a:hover,
 button:hover,
 span:hover {
@@ -1527,12 +1524,7 @@ footer a {
   margin-top: 90px;
 }
 
-/* #competences {
-  width: 95%;
-  height: 100vh;
-  padding-left: 10px;
-  padding-right: 10px;
-} */
+
 #infos_pratiques {
   padding: 0;
 }
@@ -1553,12 +1545,6 @@ footer a {
 /*----------------------------------------------------------------------
 ----------------------------------------------------------------------*/
 @media screen and (max-width: 500px) {
-  /* #competences
-{
-
-
-height: 165vh;
-} */
 
   #competences img {
     width: 90%;
@@ -1836,13 +1822,6 @@ footer a {
   align-items: center;
 }
 
-/* .new
-{flex-direction: column;} */
-/* form.form_contact{
-  display: flex;
-  flex-direction: column;
-} */
-
 /*-----------------------responsive mobile-------------------------*/
 @media screen and (max-width: 770px) {
 
@@ -1905,12 +1884,6 @@ footer a {
   margin-top: 90px;
 }
 
-/* #competences {
-  width: 95%;
-  height: 100vh;
-  padding-left: 10px;
-  padding-right: 10px;
-} */
 #infos_pratiques {
   padding: 0;
 }
@@ -1931,12 +1904,6 @@ footer a {
 /*----------------------------------------------------------------------
 ----------------------------------------------------------------------*/
 @media screen and (max-width: 500px) {
-  /* #competences
-{
-
-
-height: 165vh;
-} */
 
   #competences img {
     width: 90%;
