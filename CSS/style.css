@@ -744,6 +744,7 @@ section .information {
   display: flex;
   margin-bottom: 25px;
   margin-top: 25px;
+  justify-content: center;
 }
 
 #localisation {
