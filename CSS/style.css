@@ -633,10 +633,15 @@ aside.localisation_cabinet {
   -o-border-radius: 30px;
 }
 
-.presentation_explain {
 
+.presentation_explain {
   padding: 20px 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 aside .explication {
   font-weight: bold;
@@ -738,6 +743,7 @@ section .information {
   margin: auto;
   display: flex;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 #localisation {
