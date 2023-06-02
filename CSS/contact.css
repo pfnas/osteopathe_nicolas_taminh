@@ -1325,6 +1325,11 @@ footer a {
 
 /*---------------------responsive tablet---------------------*/
 @media screen and (max-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   header .container {
 
     flex-direction: column;
