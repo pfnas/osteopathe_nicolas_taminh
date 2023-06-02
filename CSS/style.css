@@ -1373,7 +1373,7 @@ footer a {
     padding-top: 40px;
     margin-top: 60px;
     background: rgba(128, 255, 128, 0.8);
-    height: 20vh;
+    height: 50vh;
     width: 75vw;
     transform: translate(-150%);
     display: flex;
